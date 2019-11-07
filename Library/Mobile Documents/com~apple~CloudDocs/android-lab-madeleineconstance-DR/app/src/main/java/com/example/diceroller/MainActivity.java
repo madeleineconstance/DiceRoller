@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
 
         TextView tv = this.findViewById(R.id.textView);
 
-        int number = getRandomN(6);
+        int number = roll_the_dice(6);
 
         tv.setText(String.valueOf(number));
 
@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public int getRandomN(int bound){
+    public int roll_the_dice(int bound){
 
         TextView tv = this.findViewById(R.id.textView);
         Random r = new Random();
@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
     public void on_buttonD_ICE_click(View view){
         TextView tv = this.findViewById(R.id.textView);
 
-        int n = getRandomN(a.size());
+        int n = roll_the_dice(a.size());
 
         tv.setText(a.get(n));
 
